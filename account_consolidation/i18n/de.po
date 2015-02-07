@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-13 09:10+0000\n"
-"PO-Revision-Date: 2015-02-06 08:28+0100\n"
+"PO-Revision-Date: 2015-02-07 07:28+0100\n"
 "Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,8 @@ msgid ""
 "Currency rate type used on this account for the consolidation. Leave empty "
 "to use the rate type of the account type."
 msgstr ""
-"Währungskurs-Art, die für dieses Konto bei der Konsolidierung verwendet "
-"wird. Leer lassen, um die Vorgabe der Kontoart zu übernehmen."
+"Währungskursart, die für dieses Konto bei der Konsolidierung verwendet wird. "
+"Leer lassen, um die Vorgabe der Kontoart zu übernehmen."
 
 #. module: account_consolidation
 #: help:account.consolidation.consolidate,from_period_id:0
@@ -256,9 +256,8 @@ msgstr "Konfiguration"
 
 #. module: account_consolidation
 #: field:account.consolidation.consolidate,target_move:0
-#, fuzzy
 msgid "Target Moves"
-msgstr "Zielbuchungen"
+msgstr "Buchungsziele"
 
 #. module: account_consolidation
 #: field:account.consolidation.consolidate,from_period_id:0
@@ -313,7 +312,7 @@ msgstr "Periode von %s bis %s in der Dachgesellschaft %s nicht gefunden"
 #. module: account_consolidation
 #: selection:account.consolidation.consolidate,target_move:0
 msgid "All Posted Entries"
-msgstr "Nur gebuchte"
+msgstr "Nur gebuchte Posten"
 
 #. module: account_consolidation
 #: code:addons/account_consolidation/wizard/consolidation_base.py:162
@@ -405,9 +404,8 @@ msgstr "Kontenplanprüfung 1"
 #. module: account_consolidation
 #: selection:account.account,consolidation_mode:0
 #: selection:account.account.type,consolidation_mode:0
-#, fuzzy
 msgid "YTD"
-msgstr "Bis heute kumulierter neu bewerteter Betrag"
+msgstr "Erfolg bis Dato"
 
 #. module: account_consolidation
 #: view:account.consolidation.check:0
@@ -429,9 +427,8 @@ msgstr ""
 
 #. module: account_consolidation
 #: field:account.move.line,is_current_company:0
-#, fuzzy
 msgid "Current company"
-msgstr "Verbundenes Unternehmen"
+msgstr "Gegenwärtiges Unternehmen"
 
 #. module: account_consolidation
 #: code:addons/account_consolidation/wizard/consolidation_consolidate.py:207
@@ -458,15 +455,13 @@ msgstr "Konsolidierung: Konsilidiere"
 
 #. module: account_consolidation
 #: model:ir.model,name:account_consolidation.model_account_move
-#, fuzzy
 msgid "Account Entry"
-msgstr "Kontoeintrag"
+msgstr "Kontoposten"
 
 #. module: account_consolidation
 #: model:ir.ui.menu,name:account_consolidation.menu_conso_entries
-#, fuzzy
 msgid "Consolidation Entries"
-msgstr "Erzeuge Buchungen"
+msgstr "Konsolidierungsbbuchungen"
 
 #. module: account_consolidation
 #: help:res.company,consolidation_diff_account_id:0
@@ -475,9 +470,8 @@ msgstr "Dieses Konto wird Konsolidierungsdifferenzen aufweisen"
 
 #. module: account_consolidation
 #: view:account.consolidation.check:0
-#, fuzzy
 msgid "Check Charts 2"
-msgstr "Kontenplan öffnen"
+msgstr "Kontenplanprüfung 2"
 
 #. module: account_consolidation
 #: model:ir.model,name:account_consolidation.model_account_consolidation_check
@@ -493,23 +487,22 @@ msgstr "Das Geschäftsjahr des Unternehmens %s besteht zwischen %s und %s nicht"
 
 #. module: account_consolidation
 #: code:addons/account_consolidation/wizard/consolidation_consolidate.py:504
-#, fuzzy, python-format
+#, python-format
 msgid "Consolidated Entries"
-msgstr "Erzeuge Buchungen"
+msgstr "Konsolidierte Posten"
 
 #. module: account_consolidation
 #: code:addons/account_consolidation/wizard/consolidation_check.py:52
 #: code:addons/account_consolidation/wizard/consolidation_check.py:78
 #: code:addons/account_consolidation/wizard/consolidation_check.py:103
-#, fuzzy, python-format
+#, python-format
 msgid "Validation"
-msgstr "Prüfungsergebnisse"
+msgstr "Prüfung"
 
 #. module: account_consolidation
 #: model:res.groups,name:account_consolidation.consolidation_user
-#, fuzzy
 msgid "Consolidation user"
-msgstr "Freizugebende Benutzer"
+msgstr "Konsoldierer"
 
 #. module: account_consolidation
 #: help:account.account.type,consolidation_rate_type_id:0
@@ -522,46 +515,39 @@ msgstr ""
 
 #. module: account_consolidation
 #: view:account.consolidation.consolidate:0
-#, fuzzy
 msgid "Holding Chart of Accounts"
-msgstr "Kontenplan aus Vorlage aktualisieren"
+msgstr "Kontenplan der Dachgesellschaft"
 
 #. module: account_consolidation
 #: view:account.consolidation.check:0 view:account.consolidation.consolidate:0
-#, fuzzy
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #. module: account_consolidation
 #: code:addons/account_consolidation/wizard/consolidation_check.py:103
-#, fuzzy, python-format
+#, python-format
 msgid "All account is mapped"
-msgstr "%(account)s: Konto auf das Neubewertung angewendet wird"
+msgstr "Alle Konten sind zugeordnet"
 
 #. module: account_consolidation
 #: field:account.account,consolidation_rate_type_id:0
 #: field:account.account.type,consolidation_rate_type_id:0
-#, fuzzy
 msgid "Consolidation Currency Rate Type"
-msgstr ""
-"Der Kurs der Währung zur Währung mit Kurs 1 (0 wenn kein Wert festgelegt)."
+msgstr "Wechselkursart der Konsolidierung"
 
 #. module: account_consolidation
 #: field:account.consolidation.consolidate,journal_id:0
-#, fuzzy
 msgid "Journal"
 msgstr "Journal"
 
 #. module: account_consolidation
 #: selection:account.consolidation.consolidate,target_move:0
-#, fuzzy
 msgid "All Entries"
-msgstr "Alle Einträge"
+msgstr "Alle Posten"
 
 #. module: account_consolidation
 #: model:ir.actions.act_window,name:account_consolidation.action_account_moves_all_a
 #: model:ir.model,name:account_consolidation.model_account_move_line
 #: model:ir.ui.menu,name:account_consolidation.menu_action_account_moves_all
-#, fuzzy
 msgid "Journal Items"
-msgstr "Journalbuchungen"
+msgstr "Journalposten"
